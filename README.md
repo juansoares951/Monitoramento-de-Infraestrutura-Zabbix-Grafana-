@@ -123,13 +123,13 @@ Pré-requisitos :
 - Hosts Windows monitorados
 - Acesso root/sudo
 
-Instalação do Grafana
-sudo apt update
-sudo apt install -y apt-transport-https ca-certificates curl gnupg lsb-release
-sudo curl https://packages.grafana.com/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/grafana-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/grafana-archive-keyring.gpg] https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
-sudo apt update
-sudo apt install -y grafana
+Instalação do Grafana: 
+- sudo apt update
+- sudo apt install -y apt-transport-https ca-certificates curl gnupg lsb-release
+- sudo curl https://packages.grafana.com/gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/grafana-archive-keyring.gpg
+  echo "deb [signed-by=/usr/share/keyrings/grafana-archive-keyring.gpg] https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
+- sudo apt update
+- sudo apt install -y grafana
 
 Configuração inicial:
 - Porta HTTP: 7777
